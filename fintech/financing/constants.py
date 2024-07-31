@@ -1,0 +1,20 @@
+"""Constant Values used for a given Investor, Fund and/or Transaction"""
+
+TRANSACTION_PENDING = "pending"
+TRANSACTION_COMPLETED = "completed"
+TRANSACTION_FAILED = "failed"
+
+STATUS_CHOICES = (
+        (TRANSACTION_PENDING, TRANSACTION_PENDING),
+        (TRANSACTION_COMPLETED, TRANSACTION_COMPLETED),
+        (TRANSACTION_FAILED, TRANSACTION_FAILED),
+    )
+
+
+DEPOSIT = "deposit"
+WITHDRAWAL = "withdrawal"
+
+TRANSACTION_TYPES = (
+        (DEPOSIT, DEPOSIT),
+        (WITHDRAWAL, WITHDRAWAL),
+)
