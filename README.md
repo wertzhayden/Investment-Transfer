@@ -2,17 +2,6 @@
 
 This project provides a solution for transferring money from an investor's account to a fund's account, following specific criteria. It includes services for managing investors, funds, and transactions, with REST APIs exposed for each service.
 
-## Table of Contents
-
-1. [Getting Started](#getting-started)
-2. [Dependencies](#dependencies)
-3. [Installation](#installation)
-4. [Running the Server](#running-the-server)
-5. [Running Tests](#running-tests)
-6. [Environment Variables](#environment-variables)
-7. [API Documentation](#api-documentation)
-8. [Postman Collection](#postman-collection)
-9. [License](#license)
 
 ## Getting Started
 
