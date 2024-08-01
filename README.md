@@ -29,10 +29,32 @@ Ensure you have the following dependencies installed:
 - **RabbitMQ**: For handling asynchronous tasks.
 - **Virtualenv**: Recommended for creating an isolated Python environment.
 
-## Installation
+# API Documentation
 
-1. **Clone the Repository**
+This project includes a Postman collection for testing and interacting with our API.
 
-   ```bash
-   git clone https://github.com/your-username/investor-fund-transfer.git
-   cd investor-fund-transfer
+## Postman Collection
+
+You can find the Postman collection [here](link-to-your-postman-collection.json). It contains all the endpoints with example requests and responses.
+
+### How to Use
+
+1. **Import the Collection:** 
+   - Download the JSON file from the link above.
+   - In Postman, click on "Import" and select the downloaded file.
+
+2. **Authentication:**
+   - The API requires authentication. Please use your API key in the headers for each request.
+
+3. **Available Endpoints:**
+   - **GET /api/resource**: Description of the endpoint.
+   - **POST /api/resource**: Description of the endpoint.
+   - ...
+
+## Postman Public Workspace
+
+If you prefer, you can access our Postman public workspace directly by clicking the badge below:
+
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://www.postman.com/link-to-your-public-workspace)
+
+
