@@ -40,3 +40,64 @@ It contains all the endpoints with example requests and responses.
 2. **Available Endpoints:**
    - **POST /v1/financing/withdrawal/**: The Investor Service API will sends the withdrawal request, checks the investor's balance and processes the withdrawal. If successful, it triggers a transfer request to the Transaction Service.
    - **POST /v1/financing/transfer/**: The Transaction Service validates the transfer request, ensuring that all of the fund's criteria are met via the Fund Service. Once the Fund service verifies the minimum investment threshold, seat availability, and other criteria, it will process the fund transer and update both the investor and fund balances. Notifications are then sent to relevant parties upon the successful completion.
+
+
+
+
+
+# Investor-Fund Transfer Service
+
+This project provides a solution for transferring money from an investor's account to a fund's account based on specific criteria. It includes services for managing investors, funds, and transactions, with REST APIs exposed for each service.
+
+## Getting Started
+
+To run this project locally, follow the instructions below.
+
+### Prerequisites
+
+Ensure you have the following dependencies installed:
+
+- **Python 3.8+**: Required for running the project.
+- **Django 3.2+**: A high-level Python web framework.
+- **Virtualenv**: Recommended for creating an isolated Python environment.
+
+### Installation and Setup
+
+1. **Create and Activate Virtual Environment:**
+   ```bash
+   virtualenv myenv
+   source myenv/bin/activate
+
+
+Apply Migrations:
+bash
+Copy code
+python manage.py makemigrations
+python.manage.py migrate
+Start the Development Server:
+bash
+Copy code
+python manage.py runserver
+Your local development server should now be running, and you can use Postman to interact with the API.
+
+API Documentation
+
+This project includes a Postman collection for testing and interacting with our service-based APIs. To use the Postman collection, ensure your local server is running and click the button below to import the collection into Postman.
+
+
+
+It contains all the endpoints with example requests and responses.
+
+Key Endpoints
+Investor Withdrawal
+Endpoint: POST /v1/financing/withdrawal/
+Description: Sends a withdrawal request, checks the investor's balance, and processes the withdrawal. If successful, triggers a transfer request to the Transaction Service.
+Fund Transfer
+Endpoint: POST /v1/financing/transfer/
+Description: The Transaction Service validates the transfer request, ensuring all fund criteria are met via the Fund Service. Upon verification, it processes the fund transfer and updates both the investor and fund balances. Notifications are sent to relevant parties upon successful completion.
+This README provides an overview and setup instructions for the Investor-Fund Transfer Service. For detailed API specifications and usage, refer to the Postman collection linked above.
+
+
+
+
+
