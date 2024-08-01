@@ -59,14 +59,4 @@ It contains all the endpoints with example requests and responses.
 - **Endpoint:** `POST /v1/financing/transfer/`
 - **Description:** The Transaction Service validates the transfer request, ensuring all fund criteria are met via the Fund Service. Upon verification, it processes the fund transfer and updates both the investor and fund balances. Notifications are sent to relevant parties upon successful completion.
 
-
-2. **Available Endpoints:**
-   - **POST /v1/financing/withdrawal/**: The Investor Service API will sends the withdrawal request, checks the investor's balance and processes the withdrawal. If successful, it triggers a transfer request to the Transaction Service.
-   - **POST /v1/financing/transfer/**: The Transaction Service validates the transfer request, ensuring that all of the fund's criteria are met via the Fund Service. Once the Fund service verifies the minimum investment threshold, seat availability, and other criteria, it will process the fund transer and update both the investor and fund balances. Notifications are then sent to relevant parties upon the successful completion.
-
-
-
-
-
-
-
+This README provides an overview and setup instructions for the Investor-Fund Transfer Service. For detailed API specifications and usage, refer to the Postman collection linked above.
