@@ -1,4 +1,4 @@
-"""Base model for listing database models."""
+"""Base model to Store the Created and Updated Timestamps per Fund, Investor and Transaction"""
 
 from django.db import models
 from uuid import uuid4

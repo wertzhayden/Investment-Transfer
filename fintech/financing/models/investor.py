@@ -7,5 +7,7 @@ from financing.models.base import BaseModel
 
 class Investor(BaseModel):
     """Model to Represent the Features associated with an Investor"""
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    email = models.EmailField(
+        verbose_name="email address", max_length=255, unique=True
+    )
     balance = models.FloatField(default=0, null=True, blank=True)

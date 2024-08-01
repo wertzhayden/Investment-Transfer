@@ -2,6 +2,7 @@
 from django.db.models.signals import post_migrate
 from django.dispatch import receiver
 from django.contrib.auth.models import User
+from rest_framework.authtoken.models import Token
 from financing.models.investor import Investor
 from financing.models.fund import Fund
 
@@ -9,26 +10,12 @@ from financing.models.fund import Fund
 def create_initial_data(sender, **kwargs):
     if sender.name == 'financing':
         # Check if data already exists to prevent duplicate entries
-        
-        # Create User instances if they don't exist
-        if User.objects.count() == 0:
-            users = []
-            for i in range(5):
-                user = User.objects.create_user(
-                    username=f"user{i}",  # Ensuring unique username
-                    email=f"wertzhayden{i}@gmail.com",
-                    password='defaultpassword'  # Assign a default password
-                )
-                users.append(user)
-        else:
-            users = list(User.objects.all()[:5])
 
         # Create Investor instances if they don't exist
         if Investor.objects.count() == 0:
-            for i, user in enumerate(users):
+            for i in range(5):
                 Investor.objects.create(
-                    user=user,
-                    email=f"wertzhayden{i}@gmail.com", 
+                    email=f"wertzhayden{i}@gmail.com",
                     balance=1000 + i * 100
                 )
 
