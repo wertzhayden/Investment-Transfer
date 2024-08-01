@@ -35,7 +35,7 @@ This project includes a Postman collection for testing and interacting with our 
 
 ## Postman Collection
 
-You can find the Postman collection [here]([<img src="https://run.pstmn.io/button.svg" alt="Run In Postman" style="width: 128px; height: 32px;">](https://app.getpostman.com/run-collection/19779588-a4357600-f859-4daf-8716-3f16a5556418?action=collection%2Ffork&source=rip_markdown&collection-url=entityId%3D19779588-a4357600-f859-4daf-8716-3f16a5556418%26entityType%3Dcollection%26workspaceId%3D27296c38-f34b-4fd1-8892-8000a4758b24)). It contains all the endpoints with example requests and responses.
+You can run the Postman collection here [click me]([<img src="https://run.pstmn.io/button.svg" alt="Run In Postman" style="width: 128px; height: 32px;">](https://app.getpostman.com/run-collection/19779588-a4357600-f859-4daf-8716-3f16a5556418?action=collection%2Ffork&source=rip_markdown&collection-url=entityId%3D19779588-a4357600-f859-4daf-8716-3f16a5556418%26entityType%3Dcollection%26workspaceId%3D27296c38-f34b-4fd1-8892-8000a4758b24)). It contains all the endpoints with example requests and responses.
 
 ### How to Use
 
